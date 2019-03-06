@@ -27,7 +27,7 @@ Features
 
    - Char level filter (will update to Wu-Manber soon, ref: https://guokr.github.io/min-gan-ci-xiang-mu-zhong-rou-xing-zi-fu-chuan-pi-pei-wen-ti.html)
    - Word level filter powered by THULAC-lite (ref: https://github.com/thunlp/THULAC-Python)
-   - Pattern matching based on regex(ref: https://github.com/kemingy/cnprep)
+   - Pattern matching based on regex (ref: https://github.com/kemingy/cnprep)
 
 
 Requirements and Installation
