@@ -6,6 +6,8 @@
 Welcome to PyHachi's documentation!
 ===================================
 
+PyHachi: A simple but scalable content filter
+
 
 Install
 -------
@@ -19,37 +21,32 @@ Quick Start
 ------------
 
 ::
+   
+   from pyhachi import HachiModel
+   from pyhachi import BlacklistPlugin, PatternPlugin
+   
+   
+   plug_1 = BlacklistPlugin(words_list=["可乐", "雪碧"])
+   print(plug_1)
+   
+   plug_2 = PatternPlugin()
+   print(plug_2)
+   
+   model = HachiModel(plugins=[plug_1, plug_2])
+   
+   query = ("我这里有雪碧，可乐和许多其他的饮料，你要不要尝尝？\
+            我的手机号是13100000000 我的个人网站www.guokr.com\
+            123o4usdjfk@gmail.com, or sfjjsaf@163.com")
+   
+   res = model.check(query)
+   
+   print(res)
 
-    from pyhachi import HachiModel
-    from pyhachi import BlacklistPlugin, PatternPlugin
-    
-    
-    plug_1 = BlacklistPlugin(words_list=["1989", "天安门"])
-    print(plug_1)
-    
-    
-    plug_2 = PatternPlugin()
-    print(plug_2)
-    
-    model = HachiModel(plugins=[plug_1, plug_2])
-    
-    query = ("1989年的夏天，我们一起在天安门广场跳舞，你还记得吗。当时的天安门有好多人。\
-             我的手机号是13126658707, 我的个人网站www.zaih.com, 我的微信号xiaoxiongmao4223, QQ 472146772\
-             123o4usdjfk@gmail.com, or sfjjsaf@163.com")
-    
-    res = model.check(query)
-    
-    print(res)
 
 
 .. toctree::
    :maxdepth: 2
 
-   pyhachi
-
-    
-
-:caption: Contents:
 
 
 Indices and tables

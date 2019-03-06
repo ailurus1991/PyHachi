@@ -35,8 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="PyHachi  documentation" href="#"/>
-        <link rel="next" title="pyhachi package" href="pyhachi.html"/> 
+    <link rel="top" title="PyHachi  documentation" href="#"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -85,10 +84,16 @@
               
             
             
-              <ul>
-<li class="toctree-l1"><a class="reference internal" href="pyhachi.html">pyhachi package</a></li>
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">Welcome to PyHachi’s documentation!</a><ul>
+<li><a class="reference internal" href="#install">Install</a></li>
+<li><a class="reference internal" href="#quick-start">Quick Start</a></li>
 </ul>
-
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</div>
             
           
         </div>
@@ -152,6 +157,7 @@
             
   <div class="section" id="welcome-to-pyhachi-s-documentation">
 <h1>Welcome to PyHachi’s documentation!<a class="headerlink" href="#welcome-to-pyhachi-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>PyHachi: A simple but scalable content filter</p>
 <div class="section" id="install">
 <h2>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">pyhachi</span>
@@ -164,17 +170,16 @@
 <span class="kn">from</span> <span class="nn">pyhachi</span> <span class="k">import</span> <span class="n">BlacklistPlugin</span><span class="p">,</span> <span class="n">PatternPlugin</span>
 
 
-<span class="n">plug_1</span> <span class="o">=</span> <span class="n">BlacklistPlugin</span><span class="p">(</span><span class="n">words_list</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;1989&quot;</span><span class="p">,</span> <span class="s2">&quot;天安门&quot;</span><span class="p">])</span>
+<span class="n">plug_1</span> <span class="o">=</span> <span class="n">BlacklistPlugin</span><span class="p">(</span><span class="n">words_list</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;可乐&quot;</span><span class="p">,</span> <span class="s2">&quot;雪碧&quot;</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">plug_1</span><span class="p">)</span>
-
 
 <span class="n">plug_2</span> <span class="o">=</span> <span class="n">PatternPlugin</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">plug_2</span><span class="p">)</span>
 
 <span class="n">model</span> <span class="o">=</span> <span class="n">HachiModel</span><span class="p">(</span><span class="n">plugins</span><span class="o">=</span><span class="p">[</span><span class="n">plug_1</span><span class="p">,</span> <span class="n">plug_2</span><span class="p">])</span>
 
-<span class="n">query</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;1989年的夏天，我们一起在天安门广场跳舞，你还记得吗。当时的天安门有好多人。</span><span class="se">\</span>
-<span class="s2">         我的手机号是13126658707, 我的个人网站www.zaih.com, 我的微信号xiaoxiongmao4223, QQ 472146772</span><span class="se">\</span>
+<span class="n">query</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;我这里有雪碧，可乐和许多其他的饮料，你要不要尝尝？</span><span class="se">\</span>
+<span class="s2">         我的手机号是13100000000 我的个人网站www.guokr.com</span><span class="se">\</span>
 <span class="s2">         123o4usdjfk@gmail.com, or sfjjsaf@163.com&quot;</span><span class="p">)</span>
 
 <span class="n">res</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">check</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
@@ -183,25 +188,7 @@
 </pre></div>
 </div>
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="pyhachi.html">pyhachi package</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="pyhachi.html#submodules">Submodules</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pyhachi.html#module-pyhachi.model">pyhachi.model module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pyhachi.html#module-pyhachi.plugin">pyhachi.plugin module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pyhachi.html#module-pyhachi.utils">pyhachi.utils module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pyhachi.html#module-pyhachi">Module contents</a></li>
-</ul>
-</li>
-</ul>
 </div>
-<table class="docutils field-list" frame="void" rules="none">
-<col class="field-name" />
-<col class="field-body" />
-<tbody valign="top">
-<tr class="field-odd field"><th class="field-name">caption:</th><td class="field-body">Contents:</td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 <div class="section" id="indices-and-tables">
@@ -220,13 +207,6 @@
            </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="pyhachi.html" class="btn btn-neutral float-right" title="pyhachi package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-    </div>
   
 
   <hr/>
