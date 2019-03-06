@@ -1,0 +1,38 @@
+pyhachi package
+===============
+
+Submodules
+----------
+
+pyhachi.model module
+--------------------
+
+.. automodule:: pyhachi.model
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pyhachi.plugin module
+---------------------
+
+.. automodule:: pyhachi.plugin
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+pyhachi.utils module
+--------------------
+
+.. automodule:: pyhachi.utils
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: pyhachi
+    :members:
+    :undoc-members:
+    :show-inheritance:

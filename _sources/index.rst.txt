@@ -1,0 +1,60 @@
+.. PyHachi documentation master file, created by
+   sphinx-quickstart on Tue Mar  5 17:43:57 2019.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to PyHachi's documentation!
+===================================
+
+
+Install
+-------
+
+::
+
+    pip install pyhachi
+
+
+Quick Start
+------------
+
+::
+
+    from pyhachi import HachiModel
+    from pyhachi import BlacklistPlugin, PatternPlugin
+    
+    
+    plug_1 = BlacklistPlugin(words_list=["1989", "天安门"])
+    print(plug_1)
+    
+    
+    plug_2 = PatternPlugin()
+    print(plug_2)
+    
+    model = HachiModel(plugins=[plug_1, plug_2])
+    
+    query = ("1989年的夏天，我们一起在天安门广场跳舞，你还记得吗。当时的天安门有好多人。\
+             我的手机号是13126658707, 我的个人网站www.zaih.com, 我的微信号xiaoxiongmao4223, QQ 472146772\
+             123o4usdjfk@gmail.com, or sfjjsaf@163.com")
+    
+    res = model.check(query)
+    
+    print(res)
+
+
+.. toctree::
+   :maxdepth: 2
+
+   pyhachi
+
+    
+
+:caption: Contents:
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
