@@ -6,21 +6,39 @@
 Welcome to PyHachi's documentation!
 ===================================
 
+Introduction
+----------------
+
 PyHachi: A simple but scalable content filter framework
 
 
 .. image:: hachi_logo.png
 
+.. todo::
 
-Install
--------
+   - Spam text classification based on DeepLearning
+   - User classification based on Gradient Boosting Machine
+    
+
+Features
+---------
+
+.. note::
+
+   - Char level filter (will update to Wu-Manber soon, ref: https://guokr.github.io/min-gan-ci-xiang-mu-zhong-rou-xing-zi-fu-chuan-pi-pei-wen-ti.html)
+   - Word level filter powered by THULAC-lite (ref: https://github.com/thunlp/THULAC-Python)
+   - Pattern matching based on regex(ref: https://github.com/kemingy/cnprep)
+
+
+Requirements and Installation
+------------------------------
 
 ::
 
    pip install pyhachi
 
 
-Quick Start
+Getting Started
 ------------
 
 .. literalinclude:: ../../quick_example.py
@@ -32,8 +50,6 @@ Quick Start
 
    self
    hachi_faq
-
-
 
 
 Indices and tables
