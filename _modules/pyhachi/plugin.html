@@ -85,8 +85,12 @@
               
             
             
-              <!-- Local TOC -->
-              <div class="local-toc"></div>
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">Welcome to PyHachi’s documentation!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hachi_faq.html">FAQ</a></li>
+</ul>
+
             
           
         </div>
@@ -158,7 +162,7 @@
 <span class="kn">from</span> <span class="nn">.utils</span> <span class="k">import</span> <span class="n">plugin_name_generator</span>
 
 
-<div class="viewcode-block" id="BlacklistPlugin"><a class="viewcode-back" href="../../pyhachi.html#pyhachi.plugin.BlacklistPlugin">[docs]</a><span class="k">class</span> <span class="nc">BlacklistPlugin</span><span class="p">():</span>
+<div class="viewcode-block" id="BlacklistPlugin"><a class="viewcode-back" href="../../index.html#pyhachi.plugin.BlacklistPlugin">[docs]</a><span class="k">class</span> <span class="nc">BlacklistPlugin</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Initialize blacklist plugin parameters:</span>
 
@@ -175,7 +179,7 @@
             <span class="s2">&quot;nigger_char&quot;</span><span class="p">:{},</span>
         <span class="p">}</span>
 
-<div class="viewcode-block" id="BlacklistPlugin.check"><a class="viewcode-back" href="../../pyhachi.html#pyhachi.plugin.BlacklistPlugin.check">[docs]</a>    <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+<div class="viewcode-block" id="BlacklistPlugin.check"><a class="viewcode-back" href="../../index.html#pyhachi.plugin.BlacklistPlugin.check">[docs]</a>    <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Blacklist plugin check method</span>
 
@@ -201,7 +205,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">res</span><span class="p">[</span><span class="s2">&quot;nigger_char&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">nigger_char</span></div>
 
 
-<div class="viewcode-block" id="PatternPlugin"><a class="viewcode-back" href="../../pyhachi.html#pyhachi.plugin.PatternPlugin">[docs]</a><span class="k">class</span> <span class="nc">PatternPlugin</span><span class="p">():</span>
+<div class="viewcode-block" id="PatternPlugin"><a class="viewcode-back" href="../../index.html#pyhachi.plugin.PatternPlugin">[docs]</a><span class="k">class</span> <span class="nc">PatternPlugin</span><span class="p">():</span>
     <span class="sd">&quot;&quot;&quot;Pattern Plugin implemented with powerful regex</span>
 
 <span class="sd">    :arg cnprep_args (list): pattern will be extracted, default is [&quot;email&quot;, &quot;telephone&quot;, &quot;url&quot;, &quot;QQ&quot;, &quot;wechat&quot;]</span>
@@ -216,7 +220,7 @@
         <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span> <span class="o">+</span> <span class="n">plugin_name_generator</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">res</span> <span class="o">=</span> <span class="p">{}</span>
 
-<div class="viewcode-block" id="PatternPlugin.check"><a class="viewcode-back" href="../../pyhachi.html#pyhachi.plugin.PatternPlugin.check">[docs]</a>    <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
+<div class="viewcode-block" id="PatternPlugin.check"><a class="viewcode-back" href="../../index.html#pyhachi.plugin.PatternPlugin.check">[docs]</a>    <span class="k">def</span> <span class="nf">check</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">):</span>
         <span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        pattern plugin check method</span>
 

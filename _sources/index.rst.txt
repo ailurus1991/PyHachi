@@ -6,7 +6,10 @@
 Welcome to PyHachi's documentation!
 ===================================
 
-PyHachi: A simple but scalable content filter
+PyHachi: A simple but scalable content filter framework
+
+
+.. image:: hachi_logo.png
 
 
 Install
@@ -14,38 +17,22 @@ Install
 
 ::
 
-    pip install pyhachi
+   pip install pyhachi
 
 
 Quick Start
 ------------
 
-::
-   
-   from pyhachi import HachiModel
-   from pyhachi import BlacklistPlugin, PatternPlugin
-   
-   
-   plug_1 = BlacklistPlugin(words_list=["可乐", "雪碧"])
-   print(plug_1)
-   
-   plug_2 = PatternPlugin()
-   print(plug_2)
-   
-   model = HachiModel(plugins=[plug_1, plug_2])
-   
-   query = ("我这里有雪碧，可乐和许多其他的饮料，你要不要尝尝？\
-            我的手机号是13100000000 我的个人网站www.guokr.com\
-            123o4usdjfk@gmail.com, or sfjjsaf@163.com")
-   
-   res = model.check(query)
-   
-   print(res)
-
+.. literalinclude:: ../../quick_example.py
 
 
 .. toctree::
    :maxdepth: 2
+   :caption: Contents:
+
+   self
+   hachi_faq
+
 
 
 

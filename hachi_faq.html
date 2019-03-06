@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Python Module Index &mdash; PyHachi  documentation</title>
+  <title>FAQ &mdash; PyHachi  documentation</title>
   
 
   
@@ -36,9 +36,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="PyHachi  documentation" href="index.html"/>
- 
-
-
+        <link rel="prev" title="Welcome to PyHachi’s documentation!" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -88,9 +86,12 @@
             
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="index.html">Welcome to PyHachi’s documentation!</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hachi_faq.html">FAQ</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">FAQ</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#blacklistplugin">1. BlacklistPlugin 判断逻辑是怎样的，它有什么缺陷吗？</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -135,12 +136,14 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>Python Module Index</li>
+      <li>FAQ</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
+            <a href="_sources/hachi_faq.rst.txt" rel="nofollow"> View page source</a>
+          
         
       </li>
     
@@ -152,34 +155,14 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-   <h1>Python Module Index</h1>
-
-   <div class="modindex-jumpbox">
-   <a href="#cap-p"><strong>p</strong></a>
-   </div>
-
-   <table class="indextable modindextable">
-     <tr class="pcap"><td></td><td>&#160;</td><td></td></tr>
-     <tr class="cap" id="cap-p"><td></td><td>
-       <strong>p</strong></td><td></td></tr>
-     <tr>
-       <td><img src="_static/minus.png" class="toggler"
-              id="toggle-1" style="display: none" alt="-" /></td>
-       <td>
-       <a href="pyhachi.html#module-pyhachi"><code class="xref">pyhachi</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="pyhachi.html#module-pyhachi.model"><code class="xref">pyhachi.model</code></a></td><td>
-       <em></em></td></tr>
-     <tr class="cg-1">
-       <td></td>
-       <td>&#160;&#160;&#160;
-       <a href="pyhachi.html#module-pyhachi.utils"><code class="xref">pyhachi.utils</code></a></td><td>
-       <em></em></td></tr>
-   </table>
+  <div class="section" id="faq">
+<h1>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="blacklistplugin">
+<h2>1. BlacklistPlugin 判断逻辑是怎样的，它有什么缺陷吗？<a class="headerlink" href="#blacklistplugin" title="Permalink to this headline">¶</a></h2>
+<p>BlacklistPlugin 的默认会首先从提供的词表中读取词表，并将它们加入用户词典，从而在分词的过程中对原生的分词算法进行人工干预。</p>
+<p>nigger_word 和 nigger_char 会分别从分词和不分词的角度来检查。</p>
+</div>
+</div>
 
 
            </div>
@@ -188,6 +171,13 @@
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Welcome to PyHachi’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
